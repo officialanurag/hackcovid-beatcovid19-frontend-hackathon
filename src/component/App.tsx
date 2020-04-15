@@ -3,13 +3,13 @@ import './App.css';
 import { HomeComponent } from '../component/Home/HomeComponent';
 import { NavbarComponent } from '../component/Navbar/NavbarComponent';
 
-
-const App: FC = () => {
-    return <div> 
+const App: React.FC<{}> = () => {
+    return (
+    <div> 
        <NavbarComponent/>
        <HomeComponent/>
-
-       </div>;
+    </div>
+    )
 }
 
 export default App;
