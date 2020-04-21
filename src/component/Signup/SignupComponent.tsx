@@ -6,7 +6,7 @@ const SignupComponent: React.FC = () => {
   return (
     <div>
       <Card >
-        <Card.Body className={``} variant="outline-primary">
+        <Card.Body className={``}>
           <Card.Title className="text-center">Signup Here</Card.Title>
           <Card.Text>
             <p className="text-center"> Please fill The from to SignUp</p>
