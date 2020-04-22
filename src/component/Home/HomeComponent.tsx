@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Row, Col, Container} from 'react-bootstrap';
 import styles from '../Home/Home.module.css';
 import SignupComponent from '../Signup/SignupComponent';
 import HomemaintextComponent from '../Homemaintext/HomemaintextComponent';
+import { LoginComponent } from '../Login/LoginComponent';
 
 export const HomeComponent: React.FC = () => {
+  const [toggleSignupLogin, setToggleSignupLogin] = useState(true);
+
+  const toggleState = () => setToggleSignupLogin(!toggleSignupLogin);
+
   return (
     <div className={styles.homeMain}>
       <div className={styles.overlay}>
