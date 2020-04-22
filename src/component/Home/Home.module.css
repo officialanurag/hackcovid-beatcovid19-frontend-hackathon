@@ -1,10 +1,5 @@
 .homeMain {
-    background-image: url(./Assets/background.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 700px;
-    color: white;
+    color: rgb(27, 25, 25);
 }
 .overlay {
     position: relative;
@@ -12,7 +7,6 @@
     left: 0;
     width: 100%;
     min-height: 700px;
-    background: rgba(0, 0, 0, 0.7);
 }
 
 .inner {

@@ -14,23 +14,18 @@ export const HomeComponent: React.FC = () => {
     <div className={styles.homeMain}>
       <div className={styles.overlay}>
         <Container >
-          <div className = {styles.inner}>
+          <div className={styles.inner}>
             <Row>
-              <Col xs={12} md={8} lg={8}  className='d-none d-lg-block'>
-                <HomemaintextComponent/>
-              </Col>  
-              <Col xs={12} md={4} lg={4}>
-                {
-                  toggleSignupLogin 
-                  ? <SignupComponent enablelogin = {toggleState}/> 
-                  : <LoginComponent enablesignup = {toggleState}/>
-                }
+              <Col xs={12} md={8} lg={8} className='d-none d-lg-block'>
+                <HomemaintextComponent />
               </Col>
-            </Row> 
+              <Col xs={12} md={4} lg={4}>
+                <SignupComponent />
+              </Col>
+            </Row>
           </div>
         </Container>
-      </div> 
+      </div>
     </div>
   );
 }
-
